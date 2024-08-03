@@ -1,6 +1,6 @@
 $mainColor: #22232c;
 $textColor: #c1c2c5;
-$mainFont: 'Gilroy-Regular', sans-serif;
+$mainFont: 'Saira', sans-serif;
 
 $secondaryColor: rgba(12, 12, 12, 0.4);
 $secondaryColorHighlight: #33343F;
@@ -13,39 +13,11 @@ $gridSize: 10.2vh;
 $gridGap: 10px;
 $containerSize: calc(#{$gridRows} * #{$gridSize + 0.22vh} + #{$gridRows} * -2px);
 
-@font-face {
-  font-family: 'Gilroy-Bold';
-  src: local('Gilroy-Bold'), url(nui://ox_inventory/web/fonts/Gilroy-Bold.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Gilroy-Medium';
-  src: local('Gilroy-Medium'), url(nui://ox_inventory/web/fonts/Gilroy-Medium.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Gilroy-Regular';
-  src: local('Gilroy-Regular'), url(nui://ox_inventory/web/fonts/Gilroy-Regular.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Gilroy-Light';
-  src: local('Gilroy-Light'), url(nui://ox_inventory/web/fonts/Gilroy-Light.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Gilroy-Thin';
-  src: local('Gilroy-Thin'), url(nui://ox_inventory/web/fonts/Gilroy-Thin.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Gilroy-SemiBold';
-  src: local('Gilroy-SemiBold'), url(nui://ox_inventory/web/fonts/Gilroy-SemiBold.ttf) format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+  font-family: 'Saira', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
     'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -208,7 +180,7 @@ button:active {
     transition: 200ms;
     padding: 12px 8px;
     text-transform: uppercase;
-    font-family: "Gilroy-Medium", sans-serif;
+    font-family: 'Saira', sans-serif;
     width: 7vw;
     &:hover {
       background-color: rgba(255, 255, 255, 0.05);
@@ -394,7 +366,7 @@ button:active {
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 2px 3px;
-  font-family: 'Gilroy-Light', sans-serif;
+  font-family: 'Saira', sans-serif;
   font-size: 10px;
 }
 
@@ -405,7 +377,7 @@ button:active {
   width: 15px;
   padding: 3px;
   font-size: 12px;
-  font-family: 'Gilroy-SemiBold', sans-serif;
+  font-family: 'Saira', sans-serif;
   left: 72px;
   text-align: center;
   top: 0;
@@ -477,7 +449,7 @@ button:active {
   flex-direction: column;
   min-width: 200px;
   color: rgb(193, 194, 197);
-  font-family: 'Gilroy-Regular', sans-serif;
+  font-family: 'Saira', sans-serif;
   border-color: rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   background: linear-gradient(358deg, rgb(21 53 80 / 15%) 0%, rgb(0 0 0 / 40%) 100%);
@@ -674,7 +646,7 @@ button:active {
 .WeightText
 {
   font-size: 14px;
-  font-family: "Gilroy-Thin", sans-serif;
+  font-family: 'Saira', sans-serif;
   padding-left: 10px;
   margin-bottom: 6px;
 }
@@ -682,7 +654,7 @@ button:active {
 .LabelText
 {
   font-size: 20px;
-  font-family: "Gilroy-Light", sans-serif;
+  font-family: 'Saira', sans-serif;
   padding-right: 10px;
 }
 
@@ -691,18 +663,18 @@ button:active {
   position: absolute;
   bottom: 34.4vh;
   font-size: 21px;
-  font-family: "Gilroy-Medium", sans-serif;
+  font-family: 'Saira', sans-serif;
 }
 
 .iconWrapper {
   display: inline-flex; /* Use flexbox for easier vertical alignment */
   align-items: center; /* Vertically center items */
   justify-content: center; /* Horizontally center items */
-  background-color: #008cff;
+  background-color: rgb(64,192,87);
   padding: 6px;
   border-radius: 5px;
   margin-right: 12px;
-  box-shadow: 0px 2px 20px 4px #008cff7d;
+  box-shadow: 0px 2px 20px 4px rgba(64,192,87,0.5);
   width: 20px; /* Width of the rectangle */
   height: 20px; /* Height of the rectangle */
 }
@@ -711,11 +683,11 @@ button:active {
   display: inline-flex; /* Use flexbox for easier vertical alignment */
   align-items: center; /* Vertically center items */
   justify-content: center; /* Horizontally center items */
-  background-color: #008cff;
+  background-color: rgb(64,192,87);
   padding: 6px;
   border-radius: 5px;
   margin-right: 12px;
-  box-shadow: 0px 2px 20px 4px #008cff7d;
+  box-shadow: 0px 2px 20px 4px rgba(64,192,87,0.5);
   width: 25px; /* Width of the rectangle */
   height: 25px; /* Height of the rectangle */
 }
@@ -743,7 +715,7 @@ button:active {
   align-items: center;
   width: 26.5vw;
   font-size: 25px;
-  font-family: 'Gilroy-Regular',sans-serif;
+  font-family: 'Saira',sans-serif;
   padding-left: 6px;
 }
 
